@@ -1,0 +1,58 @@
+
+name: "🆕 Feature"
+description: "새로운 기능 구현"
+title: "[Feat] "
+labels: ["feature"]
+
+body:
+  - type: textarea
+    attributes:
+      label: "📝 작업 개요"
+      description: "구현할 기능의 목적과 요구사항을 작성해주세요."
+      placeholder: "구현할 기능에 대해 설명해주세요."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "📋 작업 내용"
+      description: "구현해야 할 세부 작업을 체크리스트로 작성해주세요."
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "✅ 완료 조건"
+      description: "작업이 완료되었다고 판단할 수 있는 기준을 작성해주세요."
+      placeholder: "기능의 정상 동작 및 검증 기준"
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: "📆 예상 완료일"
+      description: "예상 작업 완료 날짜를 입력해주세요."
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
+
+  - type: dropdown
+    attributes:
+      label: "❗ 우선순위"
+      options:
+        - "1순위"
+        - "2순위"
+        - "부가 기능"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "📝 참고 사항"
+      description: "관련 문서, 참고 링크 또는 추가로 공유할 내용을 작성해주세요."
+    validations:
+      required: false
